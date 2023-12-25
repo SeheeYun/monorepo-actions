@@ -1,0 +1,31 @@
+# name: Firebase Preview Hosting
+
+# on:
+#   pull_request:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy-preview:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v2
+
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: 14
+
+#       - name: Install Dependencies
+#         run: yarn install
+
+#       - name: Build
+#         run: yarn build
+
+#       - name: Deploy to Firebase Hosting
+#         run: |
+#           yarn global add firebase-tools
+#           firebase use --add ${{ secrets.FIREBASE_PROJECT_ALIAS }}
+#           firebase deploy --only hosting:preview --token ${{ secrets.FIREBASE_TOKEN }}
