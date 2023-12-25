@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "hosting-test-5102a"
+  },
+  "targets": {
+    "hosting-test-5102a": {
+      "hosting": {
+        "prototype-a": [
+          "monorepo-prototype-a"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

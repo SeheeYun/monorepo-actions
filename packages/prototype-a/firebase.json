@@ -1,0 +1,13 @@
+{
+  "hosting": [
+    {
+      "target": "prototype-a",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}
